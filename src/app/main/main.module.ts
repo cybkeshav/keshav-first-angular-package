@@ -11,4 +11,5 @@ import {MathComponent} from "../math/math.component";
   providers: [MathService],
   exports: [MathComponent]
 })
+
 export class MainModule { }
