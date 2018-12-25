@@ -1,14 +1,13 @@
-import { NgModule } from '@angular/core';
+import { MathService } from '../math.service';
+import { MathComponent } from '../math/math.component';
+
 import { CommonModule } from '@angular/common';
-import {MathService} from "../math.service";
-import {MathComponent} from "../math/math.component";
- 
+import { NgModule } from '@angular/core';
+
 @NgModule({
-  imports: [
-    CommonModule
-  ],
+  imports: [CommonModule],
   declarations: [MathComponent],
   providers: [MathService],
-  exports: [MathComponent]
+  exports: [MathComponent],
 })
-export class MainModule { }
+export class MainModule {}
