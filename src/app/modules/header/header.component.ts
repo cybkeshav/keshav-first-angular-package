@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HeaderService } from 'src/app/header.service';
 
 @Component({
   selector: 'app-header',
@@ -6,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit() {}
-
-  titleFromPackage = 'test-keshav-first-angular-package';
+  private result: number;
+  constructor(private _headerService: HeaderService) {}
+  ngOnInit() {
+    this.result = this._headerService.add(10, 20);
+  }
 }
