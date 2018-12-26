@@ -1,6 +1,6 @@
 {
   "name": "keshav-first-angular-package",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -10,7 +10,7 @@
     "e2e": "ng e2e",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "packagr": "ng-packagr -p ng-package.json",
-    "create-package":"npm run lint && npm run format && npm run packagr"
+    "create-package": "npm run lint && npm run format && npm run packagr"
   },
   "private": false,
   "dependencies": {
