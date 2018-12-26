@@ -10,7 +10,7 @@
     "e2e": "ng e2e",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "packagr": "ng-packagr -p ng-package.json",
-    "cp": "npm run format && npm run lint && npm run packagr"
+    "cp": "npm run lint && npm run packagr"
   },
   "private": false,
   "dependencies": {
