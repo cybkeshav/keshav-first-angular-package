@@ -7,9 +7,11 @@ import { HeaderService } from '../../header.service';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-  public result = 0;
+  public Profit = 0;
   constructor(private _headerService: HeaderService) {}
   ngOnInit() {
-    this.result = this._headerService.add(10, 20);
+    this._headerService.PurchagePrice = 120;
+    this._headerService.SellingPrice = 200;
+    this.Profit = this._headerService.CalculateProfit();
   }
 }

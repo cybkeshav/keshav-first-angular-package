@@ -2,8 +2,10 @@ import { Injectable } from '@angular/core';
 
 @Injectable() // {providedIn: 'root'}
 export class HeaderService {
+  public PurchagePrice = 0;
+  public SellingPrice = 0;
   constructor() {}
-  add(a: number, b: number): number {
-    return a + b;
+  CalculateProfit(): number {
+    return this.SellingPrice - this.PurchagePrice;
   }
 }
