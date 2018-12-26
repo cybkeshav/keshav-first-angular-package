@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { HeaderComponent } from './header.component';
 
-import { HeaderService } from 'src/app/header.service';
+import { HeaderService } from '../../header.service';
 
 @NgModule({
   declarations: [HeaderComponent],

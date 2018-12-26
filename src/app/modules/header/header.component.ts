@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HeaderService } from 'src/app/header.service';
+import { HeaderService } from '../../header.service';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +7,7 @@ import { HeaderService } from 'src/app/header.service';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-  private result: number;
+  public result = 0;
   constructor(private _headerService: HeaderService) {}
   ngOnInit() {
     this.result = this._headerService.add(10, 20);
